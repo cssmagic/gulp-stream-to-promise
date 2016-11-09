@@ -4,7 +4,7 @@
 
 ## Introduction
 
-In Gulp 4, all task functions need be async, that means a task function needs to return a gulp stream, or a promise, etc.
+In Gulp 4, all task functions need to be async, that means a task function needs to return a gulp stream, or a promise, etc.
 
 With this feature, we can define multiple gulp streams as one gulp task. To do that, firstly we convert each gulp steam to promise, then combine them via `Promise.all()` to get one promise, finally return this all-in-one promise in the task function.
 
